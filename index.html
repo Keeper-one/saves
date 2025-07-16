@@ -110,7 +110,7 @@
   <script>
     let allKeepers = [];
 
-    fetch("https://keeper1-57347-default-rtdb.europe-west1.firebasedatabase.app/saves.json")
+    fetch("https://keeper1-57347-default-rtdb.europe-west1.firebasedatabase.app/keepers.json")
       .then(res => res.json())
       .then(data => {
         allKeepers = Object.entries(data).sort((a,b)=>b[1].saves - a[1].saves);
